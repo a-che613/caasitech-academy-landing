@@ -68,7 +68,7 @@ nav ul li {
 
 .drpdwn:hover .bxs-down-arrow {
   transform: rotate(180deg);
-  color: green;
+  color: rgb(186,151,60);
   /* transition: transform 0.3s ease-in-out; */
 }
 
@@ -97,7 +97,7 @@ nav ul li a {
   }
   nav {
     color: rgb(35,60,79);
-    background-color: rgb(235, 178, 178);
+    background-color: rgb(245, 232, 232);
     position: absolute;
     width: 50%;
     top: 0;
@@ -111,6 +111,7 @@ nav ul li a {
   }
   nav ul {
     flex-direction: column;
+    align-items: left;
     /* position: absolute;
     top: 0;
     left: 0;
@@ -120,6 +121,7 @@ nav ul li a {
   nav ul li {
     border: none;
     width: auto;
+    text-align: left;
   }
   nav ul li a {
     color: rgb(35,60,79);
