@@ -22,7 +22,7 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background: url('/images/landing.png');
+  background: url('images/landing.png');
 }
 
 .landing section {
