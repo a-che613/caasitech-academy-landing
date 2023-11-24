@@ -63,13 +63,13 @@
 
 .logo-div1 {
   /* border: 1px solid red; */
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .logo-title {
-  font-size: 70px;
+  font-size: 4rem;
   color: rgb(0,24,69);
 }
 .logo-label {
@@ -108,7 +108,7 @@ nav div:last-child {
   opacity: 0;
   display: none;
   position: absolute;
-  background: rgba(187, 185, 185, 0.404);
+  /* background: rgba(187, 185, 185, 0.404); */
   left: 0;
   right: 0;
   transition: all 0.6s ease;
@@ -157,6 +157,7 @@ nav ul li div ul {
   display: flex;
   border-bottom: 1px solid grey;
   padding: 15px 20px;
+  background: rgb(13,37,81);
 }
 .sub-links:hover .sub-links div:last-child {
   border-bottom: none;
@@ -165,7 +166,7 @@ nav ul li div ul {
 ._sub-links1, ._sub-links2 {
   position: absolute;
   display: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 ._sub-links1 {
@@ -175,7 +176,7 @@ nav ul li div ul {
   right: -215px;
 }
 .hover {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
 }
 .sub-links:hover .hovered {
@@ -186,6 +187,9 @@ nav ul li div ul {
 .sub-links:hover .sublink-arrow {
   transform: rotate(-90deg);
   color: rgb(186,151,60);
+}
+.navigate {
+  background: rgb(13,37,81);
 }
 
 .drpdwn:hover .bxs-down-arrow {}
@@ -289,10 +293,13 @@ main section {
   padding: 30px 10px;
   border-right: 0.5px solid rgba(128, 128, 128, 0.295);
 }
+.apply-btn {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .landing {
-    padding: 24px;
+    padding: 0;
   }
   nav {
     color: rgb(35,60,79);
@@ -341,9 +348,42 @@ main section {
     font-size: 30px;
   }
   .logo {
-    width: auto;
+    width: 80%;
+  }
+  .logo img {
+    width: 100%;
   }
   .hero {
     flex-grow: inherit;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 100%;
+    gap: 10px;
+  }
+  .cards {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-title {
+    font-size: 2rem;
+    /* color: rgb(0,24,69); */
+  }
+  main {
+    padding: 20px;
+  }
+  main section {
+    width: 100%;
+  }
+  .apply-btn {
+    padding: 10px 14px;
+    display: block;
   }
 }
