@@ -22,7 +22,7 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background: url('https://elearning.fao.org/pluginfile.php/3/block_mtslider/bui_editid2139en7/7_upd.jpg');
+  background: url('/images/landing.png');
 }
 
 .landing section {
