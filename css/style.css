@@ -31,7 +31,8 @@ header {
 
 .logo-container {
   width: 100%;
-  background: rgba(128, 128, 128, 0.692);
+  /* background: rgba(128, 128, 128, 0.692); */
+  background: rgba(255, 255, 255, 0.63);
   padding: 20px;
   box-sizing: border-box;
 }
@@ -85,9 +86,9 @@ main section {
   width: auto;
   padding: 10px;
   border-radius: 4px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 .card-1 {
   background: rgb(115,116,149);
@@ -129,19 +130,18 @@ main section {
     gap: 30px;
   }
   nav {
-    position: relative;
+    position: sticky !important;
     color: white;
     display: flex;
     background: rgb(13,37,81);
     width: 80%;
-    position: sticky;
-    top: 0;
+    top: 0 !important;
   }
   .logo-container {
     width: auto;
-    border-radius: 12px;
+    /* border-radius: 12px;
     border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px; */
   }
   nav div:last-child {
     border-right: none;
@@ -210,6 +210,14 @@ main section {
     padding: 15px 20px;
     background: rgb(13,37,81);
   }
+  .sl {
+    flex-direction: column !important;
+    padding: 0 !important;
+  }
+  .sl p {
+    border-top: 1px solid grey;
+    padding: 15px 20px;
+  }
   .sub-links:hover .sub-links div:last-child {
     border-bottom: none;
   }
@@ -220,11 +228,9 @@ main section {
     /* border: 1px solid red; */
   
   }
-  ._sub-links1 {
-    right: -130px;
-  }
   ._sub-links2 {
-    right: -215px;
+    left: 100%;
+    top: 0;
   }
   .hover {
     /* border: 1px solid red; */
