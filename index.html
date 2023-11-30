@@ -11,12 +11,14 @@
     <header>
       <div class="overlay">
         <div class="hero">
+          <div class="menu-btn">[]</div>
           <div class="logo-container">
             <img src="images\CA-logo-removebg-preview.png" alt="" />
           </div>
 
           <!-- Nav -->
-          <nav>
+          <nav class="menu">
+            <div class="menu-close-btn">X</div>
             <div class="dropdown">
               <div class="nav-link">
                 <p>home</p>
@@ -86,7 +88,7 @@
             </div>
           </nav>
         </div>
-        <button class="apply-btn">Apply now</button>
+        <a href="apply.html"><button class="apply-btn">Apply now</button></a>
       </div>
     </header>
     <main>
@@ -158,8 +160,51 @@
           </div>
         </div>
       </section>
+      
     </main>
-
+    <section class="lowerMain">
+      <section>
+        <div class="div">
+          <h2>Work with us</h2>
+          <p>A preview of our training teams</p>
+        </div>
+        <div class="training-cards-container">
+          <div class="training-cards">
+            <img src="images\cdev.png" alt="">
+            <div>
+              <h3>CDEV - Caasitech Development Team</h3>
+              <p>About CDev: A Developer is generally responsible for the development, design and implementation of new</p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="training-cards">
+            <img src="images\cuxg.png" alt="">
+            <div>
+              <h3>CUXG - Caasitech User Experience Group</h3>
+              <p>About CUXG: The Product designer's role is very vital in business today. Also, it is..</p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="training-cards">
+            <img src="images\cnet.png" alt="">
+            <div>
+              <h3>CNET - Caasitech Network Technicians</h3>
+              <p>About CNET: Businesses are becoming increasingly dependent on technology in order to remain competitive. An...</p>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="training-cards">
+            <img src="images\cda.png" alt="">
+            <div>
+              <h3>CDA - Caasitech Data Analysts</h3>
+              <p>About CDA: A Data Analyst interprets data and turns it into information that can offer...</p>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="./js/script.js"></script>
     <script>
       // const cards = document.querySelectorAll('.info-cards');
       // const observer = new IntersectionObserver(entries => {
