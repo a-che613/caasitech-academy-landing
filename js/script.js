@@ -3,12 +3,10 @@ let menu = document.querySelector('.menu');
 let closeButton = document.querySelector('.menu-close-btn');
 
 menuButton.addEventListener('click', () => {
-  alert('script works')
   menu.classList.toggle('active');
 })
 
 closeButton.addEventListener('click', () => {
-  alert('close works');
   menu.classList.remove('active');
 })
 
